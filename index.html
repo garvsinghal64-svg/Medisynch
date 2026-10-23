@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuraDoc AI — Clinical Documentation & Intelligence Workspace</title>
+    <meta name="description" content="AI-powered clinical documentation workspace with split-screen SOAP notes, differential diagnosis reasoning, drug interaction prober, and patient-friendly translations." />
+    <meta property="og:title" content="CuraDoc AI — Clinical Documentation & Intelligence Workspace" />
+    <meta property="og:description" content="AI-powered clinical documentation workspace with split-screen SOAP notes, differential diagnosis reasoning, drug interaction prober, and patient-friendly translations." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Gracefully ignore Vite dev client HMR websocket errors in cloud proxy/iframe environments
+      window.addEventListener('unhandledrejection', function (event) {
+        if (
+          event.reason &&
+          ((typeof event.reason.message === 'string' &&
+            event.reason.message.includes('WebSocket closed without opened')) ||
+            (typeof event.reason.stack === 'string' &&
+              event.reason.stack.includes('@vite/client')))
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

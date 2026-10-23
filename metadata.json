@@ -1,0 +1,6 @@
+{
+  "name": "CuraDoc AI — Clinical Documentation & Intelligence Workspace",
+  "description": "Clinical Documentation, Medical Scribe & Evidence-Grounded Diagnostic Intelligence Workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
